@@ -8,7 +8,7 @@ async function startServer() {
 
     const app = express();
     await require('./loader').default({expressApp: app})
-    app.listen(config.port, () => {
+    app.listen(config.port, () => {       
     return console.log(`Express is listening at http://localhost:`,config.port);
     });
 }
